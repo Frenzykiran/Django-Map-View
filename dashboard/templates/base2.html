@@ -1,0 +1,47 @@
+
+    <style>
+        nav {
+            background-color: #f2f2f2;
+            padding: 10px;
+            display: flex;
+            justify-content: flex-end;
+        }
+
+        .nav-item {
+            margin-left: 220px;
+        }
+
+        a {
+            display: inline-block;
+            padding: 8px;
+            text-decoration: none;
+            color: #333;
+        }
+
+        .login {
+            position: relative;
+        }
+
+        .login a {
+            background-color: #333;
+            right: 30px;
+            color: #fff;
+            border-radius: 30px;
+            padding: 10px 20px;
+            position: relative;
+            z-index: 1;
+        }
+
+
+
+    </style>
+    <nav>
+        <div class="nav-item"><a href="{% url 'home_view' %}">Home</a></div>
+        <div class="nav-item"><a href="#">Our Products</a></div>
+        <div class="nav-item"><a href="#">About Us</a></div>
+        <div class="nav-item"><a href="#">Contact Us</a></div>
+        <div class="nav-item login"><a href="{% url 'login_view' %}">Logout</a></div>
+    </nav>
+    {% block content %}
+    {% endblock %}
+
