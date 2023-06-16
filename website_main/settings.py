@@ -44,8 +44,6 @@ INSTALLED_APPS = [
     "dashboard",
 ]
 
-GOOGLE_MAPS_API_KEY = 'AIzaSyCWAkaYNeGI0g0lNoOzF0P0ZG1RLo45Tss'
-GEOPOSITION_GOOGLE_MAPS_API_KEY = 'AIzaSyCWAkaYNeGI0g0lNoOzF0P0ZG1RLo45Tss'
 
 MIDDLEWARE = [
     "django.middleware.security.SecurityMiddleware",
